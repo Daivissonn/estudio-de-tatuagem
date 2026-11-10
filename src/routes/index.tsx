@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import logo from "@/assets/logo-lobo.png";
 
 const BOOKING_URL = "https://wa.me/557187273977";
 const INSTAGRAM_URL = "https://www.instagram.com/robsonlobostattoo/";
@@ -41,7 +42,10 @@ function Index() {
   return (
     <div className="min-h-screen bg-background font-sans text-foreground">
       <header className="fixed inset-x-0 top-0 z-20 flex items-center justify-between border-b border-border bg-background/80 px-6 py-4 backdrop-blur">
-        <span className="font-display text-2xl tracking-widest">Robson Lobos</span>
+        <div className="flex items-center gap-3">
+          <img src={logo} alt="" aria-hidden className="h-9 w-auto shrink-0 md:h-11" />
+          <span className="font-display text-2xl tracking-widest">Robson Lobos</span>
+        </div>
         <BookButton />
       </header>
 
@@ -51,18 +55,25 @@ function Index() {
         <div className="grain absolute inset-0" />
         <div className="relative max-w-5xl">
           <p className="mb-4 text-sm uppercase tracking-[0.4em] text-muted-foreground">Tattoo artist · Preto & cinza</p>
-          <h1 className="font-display text-[18vw] leading-[0.85] md:text-[11rem]">
-            Robson
-            <br />
-            <span className="text-outline">Lobos</span>
-          </h1>
+          <div className="flex items-center gap-4 md:gap-10">
+            <h1 className="font-display text-[18vw] leading-[0.85] md:text-[11rem]">
+              Robson
+              <br />
+              <span className="text-outline">Lobos</span>
+            </h1>
+            <img
+              src={logo}
+              alt="Marca do lobo de Robson Lobos Tattoo"
+              className="w-[17vw] max-w-[11rem] shrink-0 opacity-90 md:w-[13rem]"
+            />
+          </div>
           <p className="mt-6 max-w-md text-lg text-muted-foreground">Realismo, sombras e traços finos. Cada peça desenhada para a sua pele.</p>
           <div className="mt-8"><BookButton big /></div>
         </div>
       </section>
 
       <section className="px-6 py-24">
-        <div className="mb-12 flex items-end justify-between border-b border-border pb-6">
+        <div className="mb-12 flex flex-wrap items-end justify-between gap-4 border-b border-border pb-6">
           <h2 className="font-display text-6xl md:text-8xl">Portfólio</h2>
           <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer" className="text-sm uppercase tracking-widest text-muted-foreground hover:text-foreground">
             @robsonlobostattoo →
