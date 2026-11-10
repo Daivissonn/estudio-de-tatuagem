@@ -115,3 +115,7 @@
   color: transparent;
   -webkit-text-stroke: 1px var(--foreground);
 }
+
+#lovable-badge {
+  display: none !important;
+}
