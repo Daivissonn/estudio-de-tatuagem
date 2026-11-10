@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-const BOOKING_URL = "https://ig.me/m/robsonlobostattoo";
+const BOOKING_URL = "https://wa.me/557187273977";
 const INSTAGRAM_URL = "https://www.instagram.com/robsonlobostattoo/";
 
 const modules = import.meta.glob<{ default: { url: string } }>("../assets/work/*.asset.json", {
@@ -83,7 +83,12 @@ function Index() {
       <section className="grain border-y border-border px-6 py-32 text-center">
         <h2 className="font-display text-6xl md:text-9xl">Sua próxima <span className="text-outline">tattoo</span></h2>
         <p className="mx-auto mt-6 max-w-md text-muted-foreground">Mande sua ideia, referências e o local do corpo. Respondo com orçamento e datas disponíveis.</p>
-        <div className="mt-10"><BookButton big /></div>
+        <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
+          <BookButton big />
+          <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer" className="inline-block border border-primary px-10 py-5 font-display text-2xl tracking-widest transition-colors hover:bg-primary hover:text-primary-foreground">
+            Instagram @robsonlobostattoo
+          </a>
+        </div>
       </section>
 
       <footer className="flex justify-between px-6 py-8 text-sm text-muted-foreground">
