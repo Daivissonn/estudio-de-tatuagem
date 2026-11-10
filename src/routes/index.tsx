@@ -73,7 +73,7 @@ function Index() {
       </section>
 
       <section className="px-6 py-24">
-        <div className="mb-12 flex items-end justify-between border-b border-border pb-6">
+        <div className="mb-12 flex flex-wrap items-end justify-between gap-4 border-b border-border pb-6">
           <h2 className="font-display text-6xl md:text-8xl">Portfólio</h2>
           <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer" className="text-sm uppercase tracking-widest text-muted-foreground hover:text-foreground">
             @robsonlobostattoo →
